@@ -3,10 +3,11 @@ FROM alpine:edge
 RUN apk add --no-cache caddy
 
 COPY /www /www
+COPY Caddyfile Caddyfile
 
 EXPOSE 80
 
-WORKDIR /www
+WORKDIR /
 
 ENTRYPOINT ["/usr/sbin/caddy"]
-CMD ["--host", "0.0.0.0", "--port", "80", "--log", "stdout"]
+CMD ["run"]
