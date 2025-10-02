@@ -1,0 +1,8 @@
+# Tranquility
+
+Tranquility is a simple, static landing page that can be used as a placeholder
+for other web content (or as a desk toy)
+
+## Deployment
+
+The easiest way to run Tranquility is from a container image
